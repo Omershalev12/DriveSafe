@@ -1,0 +1,326 @@
+/* App.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color for the app */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Style for the app container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Styles for the header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #b4a7d6;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles for the company name */
+.company-name {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles for the hello text */
+.hello-text {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Style for the company name */
+.company-name {
+  font-size: 20px;
+  color: white;
+}
+
+/* Style for the main content */
+.app-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  align-self: center;
+}
+
+.token-div{
+  text-align: right;
+}
+
+#graph{
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.popup {
+  position: fixed;
+  height: 300px;
+  width: 200px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #ec9b45;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.profile{
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.token {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.tokens-text {
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 10px;
+  display: inline;
+  right: 0;
+  width: 100%;
+}
+
+
+/* Style for the circle container */
+.circle-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  
+  margin-bottom: 50px;
+}
+
+/* Style for the main button */
+.circle {
+  background-color: #F6B26B;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+/* Style for the spinning animation */
+.calculating {
+  animation: spin 0.6s linear;
+}
+
+/* Style for the spinner */
+.spinner {
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s infinite linear;
+}
+
+/* Style for the button text */
+.button-text {
+  color: white;
+  font-size: 18px;
+  transition: opacity 0.3s;
+}
+
+/* Style for the running timer */
+.running {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for the footer */
+.app-footer {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Style for the navbar */
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Style for the nav list */
+.nav-list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  margin: 40;
+}
+
+/* Style for the nav items */
+.nav-item {
+  width: 25%;
+  font-size: 16px;
+  font-weight:500;
+  color: #b4a7d6;
+  cursor: pointer;
+}
+
+/* New styles for the button */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f6b26b;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* New styles for the button text */
+.button-text {
+  color: white;
+  font-size: 24px;
+}
+
+/* New styles for the running timer */
+.running {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 30%;
+  margin: 10px;
+  align-items: center;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.item-description {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.item-price-button {
+  background-color: #b4a7d6;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.item-price-button:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+
+/* New styles for the spinner */
+.spinner {
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s infinite linear;
+}
+
+.logo {
+  margin-top: 10px;
+  height: fit-content;
+  padding-bottom: 0%;
+}
+
+.storeTitle {
+  width: fit-content;
+  margin-left:10%;
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
